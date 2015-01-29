@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schelling's Model</title>
+	<script src="/~acancie1/jquery.js" type="text/javascript"></script>
+	<script src="schelling.js" type="text/javascript"></script>
+	
+	<style>
+		.blue {background-color:blue;}
+		.red {background-color:red;}
+	</style>	
+</head>
+<body>
+	<h1> Schelling's Model of Segregation </h1>
+	
+	<table width="450" height="450" border="1" id="board" style="position:absolute; left:250px">
+	</table>
+	
+	<input type="range" id="size" min="10" max="30" value="10">
+	<!--display current size yXz--><br>
+	<label> Size of Board: </label><label id="sizeLabel"> 10 X 10 </label><br><br>
+	<input type="range" id="ratio" min="0" max="100" value="50">
+	<!--display current ratio R/B--><br>
+	<label> Ratio of Red to Blue: </label>
+	<label id="redLabel" style="color:red"> 50 </label>/<label id="blueLabel" style="color:blue"> 50 </label><br><br>
+	<input type="range" id="blank" min="0" max="100" value="50">
+	<!--display current percent--><br>
+	<label> Percent Blank Squares: </label><label id="blankLabel"> 50 </label>%<br><br>
+	<input type="range" id="similar" min="1" max="100" value="50">
+	<!--display current percent--><br>
+	<label> Percent Similar: </label><label id="similarLabel"> 50 </label>%<br>
+	<input type="range" id="delay" min="0" max="3000" value="60">
+	<!--display current percent--><br>
+	<label> Time Delay: </label><label id="delayLabel"> 60 </label> ms<br>
+	
+	
+	
+</body>
+
+</html>
